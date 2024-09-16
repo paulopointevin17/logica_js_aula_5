@@ -1,0 +1,97 @@
+Que ideia legal! Um jogo de perguntas sobre capitais brasileiras é uma ótima maneira de testar seus conhecimentos de geografia e praticar a lógica de programação. Vamos por partes para que você consiga organizar as ideias:1. Guardando as informações:
+Array: Você está no caminho certo! Um array é uma estrutura de dados ideal para armazenar informações relacionadas, como as capitais dos estados. Você pode criar um array com cada elemento sendo um objeto que contém o nome do estado e sua capital.
+
+Exemplo:
+                 
+                    
+                        cpp
+                        
+                            Copiar código
+                        
+                    
+                    
+                        const estados = [
+  { estado: "Acre", capital: "Rio Branco" },
+  { estado: "Alagoas", capital: "Maceió" },
+  // ... adicione os outros estados
+];
+                    
+                
+        2. Acessando as informações:
+Percorrendo o array: Para formular as perguntas, você precisa acessar as informações dentro do array. Para isso, você pode usar um loop for para percorrer cada elemento do array.
+
+Exemplo:
+                 
+                    
+                        csharp
+                        
+                            Copiar código
+                        
+                    
+                    
+                        for (let i = 0; i < estados.length; i++) {
+  // Aqui você pode acessar o nome do estado e a capital usando:
+  const nomeEstado = estados[i].estado;
+  const capitalEstado = estados[i].capital;
+
+  // Use essas informações para criar a pergunta
+}
+                    
+                
+        3. Criando a pergunta:
+Alert: Você pode usar o alert para exibir a pergunta ao usuário.
+
+Exemplo:
+                 
+                    
+                        bash
+                        
+                            Copiar código
+                        
+                    
+                    
+                        alert(`Qual a capital do ${nomeEstado}?`);
+                    
+                
+        4. Verificando a resposta:
+Prompt: Você pode usar o prompt para receber a resposta do usuário.
+
+Exemplo:
+                 
+                    
+                        javascript
+                        
+                            Copiar código
+                        
+                    
+                    
+                        const respostaUsuario = prompt(`Qual a capital do ${nomeEstado}?`);
+                    
+                
+        5. Comparando a resposta:
+Condicional: Use um if para comparar a resposta do usuário com a capital correta.
+
+Exemplo:
+                 
+                    
+                        javascript
+                        
+                            Copiar código
+                        
+                    
+                    
+                        if (respostaUsuario === capitalEstado) {
+  alert("Parabéns! Você acertou!");
+} else {
+  alert(`Que pena, a capital de ${nomeEstado} é ${capitalEstado}`);
+}
+                    
+                
+        Lembrese que este é apenas um exemplo básico. Você pode adicionar mais funcionalidades ao seu jogo, como:
+Contador de pontos: Para registrar o número de acertos do jogador.
+Níveis de dificuldade: Para aumentar a complexidade do jogo.
+Interface gráfica: Para criar um jogo mais interativo.
+
+Com essas dicas, você já pode começar a desenvolver seu jogo de perguntas sobre capitais brasileiras.  Lembrese de usar a lógica de programação que você aprendeu no curso para criar um jogo divertido e desafiador! Se tiver mais dúvidas, me chame! 
+<script>
+    
